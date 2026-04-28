@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven'   // must match Jenkins tool name
+        maven 'maven'   // must match Jenkins tool name
         jdk 'jdk'
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/omkarmaha1620-collab/maven1.git'
+                git branch: 'main', url: 'https://github.com/Pavans-24/sample'
             }
         }
 
